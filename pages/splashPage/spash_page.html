@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spash Page</title>
+    <link rel="stylesheet" href="splash.css" />
+  </head>
+  <body>
+    <main>
+      <div class="splash">
+        <img class="splash__img" src="../../assets/gif/monkey.webp" alt="pic" />
+      </div>
+    </main>
+    <div class="console-container">
+      <span id="text"></span>
+      <div class="console-underscore" id="console">&#95;</div>
+    </div>
+    <div class="console-container1">
+      <span id="text1"></span>
+      <div class="console-underscore1" id="console1">&#95;</div>
+    </div>
+    <div class="console-container2">
+      <span id="text2"></span>
+      <div class="console-underscore2" id="console2">&#95;</div>
+    </div>
+    <audio class="audio offscreen" id="audio">
+      <source src="audio/keyboard-53837.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </body>
+  <script src="splash.js"></script>
+  <!-- <script src="autoPlay.js"></script> -->
+  <script>
+    setTimeout(function () {
+      window.location.href = "../linkTree/tree.html";
+    }, 5000); // 5000 milliseconds = 5 seconds
+  </script>
+</html>

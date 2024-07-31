@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* color */
+:root {
+  --BG-COLOR: #111;
+}
+
+body {
+  background-color: var(--BG-COLOR);
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-color: red;
+}
+
+.splash__img {
+  border-radius: 50%;
+  border: 6px double black;
+  width: clamp(50px, 30vh, 200px);
+  /* height: clamp(200px, 5vh, 100px); */
+  position: absolute;
+  top: 0px;
+}
+
+/* audio */
+.offscreen {
+  position: absolute;
+  left: -1000000px;
+}
+/* text animation */
+
+.hidden {
+  opacity: 0;
+}
+.console-container,
+.console-container1,
+.console-container2 {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 5vw;
+  text-align: center;
+  /* height: 200vh;
+  width: 600px; */
+  display: block;
+  position: absolute;
+  color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 50vh 0 0 0;
+  font-weight:bold;
+  /* background-color: red; */
+}
+.console-underscore,
+.console-underscore1,
+.console-underscore2 {
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
+}
+.console-container1 {
+  margin: 58vh 0 0 0;
+}
+.console-container2 {
+  margin: 66vh 0 0 0;
+}
+/* responsive */
+@media screen and (min-width: 768px) {
+  .splash__img {
+    width: clamp(50px, 30vh, 400px);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .console-container1 {
+    margin: 62vh 0 0 0;
+  }
+  .console-container2 {
+    margin: 76vh 0 0 0;
+  }
+  .console-container,
+  .console-container1,
+  .console-container2 {
+    font-size: 3vw;
+  }
+}
