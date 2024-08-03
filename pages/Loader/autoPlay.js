@@ -3,3 +3,4 @@ document.addEventListener('DOMContentLoaded', () => {
     audioElement.autoplay = true;
     audioElement.load(); // Reload the audio element to apply the autoplay attribute
   });
+//
