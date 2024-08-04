@@ -47,7 +47,8 @@ body {
 }
 .full__header_img {
   width: 100%;
-  transform: translateY(-25px);
+  transform: translateY(-10px);
+
 }
 
 .full__header_name {
